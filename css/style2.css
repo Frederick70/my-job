@@ -1,0 +1,511 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* navigation */
+
+.hero{
+
+  background-image:linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(/image/hero-bg.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.image-logo{
+
+  width: 50px;
+}
+
+
+/* sigup buttons */
+
+.btn{
+
+  background-color: #fff;
+  text-decoration: none;
+  padding: 10px 24px;
+  color: black;
+  font-weight: 400;
+
+}
+
+.btn2{
+
+  background-color: transparent;
+  text-decoration: none;
+  padding: 10px 24px;
+  color: black;
+  font-weight: 400;
+  border: 1px solid #fff;
+
+
+
+}
+
+
+.header-content{
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  
+}
+
+.header-content p{
+
+  font-size: 14px;
+  color: whitesmoke;
+
+  line-height: 22px;
+} 
+
+
+.header-content h1{
+
+  font-size: 50px;
+  font-weight: 600;
+  color: azure;
+ margin: 10px 0 40px 0;
+ animation-name: move;      
+ animation-duration: 2s;
+
+ /* animation-fill-mode: forwards; */
+ animation-iteration-count: infinite;
+ /* animation-iteration-count: 2; */
+ position: relative;
+}
+
+
+@keyframes move{
+
+  0%{
+      left: 0%;
+
+  }
+
+  50%{
+
+    right: 50%;
+  }
+
+  0%{
+
+    left: 100%;
+  }
+
+ 
+
+ 
+}
+
+
+
+
+nav{
+
+  display: flex;
+
+justify-content: space-between;
+align-items: center;
+ background-color: #3474e6;
+ height: 60px;
+ /* padding-left: 20px;
+ padding-right: 20px;
+ padding-top: 20px;
+ padding-bottom: 20px; */
+ padding: 20px;
+ /* position: fixed; */
+ /* width: 100%;
+ top: 0; */
+}
+
+
+nav ul li{
+
+  list-style: none;
+  display: inline;
+
+  margin-left: 15px;
+  position: relative;
+
+
+
+}
+
+nav ul li::after{
+
+  content: '';
+
+  height: 2px;
+  width: 0%;
+  
+
+  margin: auto;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  display: block;
+  transition: .5s;
+
+
+}
+
+nav ul li:hover::after{
+  width: 100%;
+}
+
+nav ul li a{
+
+  text-decoration: none;
+
+  color: white;
+  font-size: 14px;
+}
+
+
+/* ABOUT SECTION */
+
+
+.about {
+
+  /* display: flex; */
+  background-color: azure;
+  width: 90%;
+  margin: auto;
+}
+
+
+.about .about-column h2{
+
+  text-align: center;
+  
+}
+
+
+/* start to optimize every section within the website using this good practices */
+
+/* RIVER STATE SECTION */
+.river-state {
+
+padding-top: 100px;  
+
+}
+
+.river-state  h1{
+
+     font-size: 50px;
+
+     color: blueviolet;
+
+     text-align: center;
+
+
+
+   }
+
+
+   .river-state p{
+
+    text-align: center;
+
+   }
+
+
+   .column{
+
+    /* border: 1px solid black; */
+
+    flex-basis: 50%;
+    /* background-color: hotpink; */
+
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    background-color: #3474e6;
+   }
+
+   .column h2{
+
+    color: white;
+    font-weight: 600;
+    margin-bottom: 10px;
+   }
+
+
+   .column img{
+
+    width: 100%;
+   }
+
+
+.flex-container{
+
+ display: flex;
+
+ margin-top: 5%;
+
+
+ align-items: center;
+ justify-content: space-between;
+
+    
+
+}
+
+/* IMO STATE SECTION */
+.imo-state {
+
+  padding-top: 100px;
+}
+
+.imo-state h1{
+
+  text-align: center;
+  font-size: 50px;
+}
+
+.imo-state p{
+
+  text-align: center;
+}
+
+.course{
+
+  flex-basis:50%;
+
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 20px;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.course .overlay{
+
+  position: absolute;
+
+  background-color: transparent;
+ 
+  height: 100%;
+  width: 100%;
+  top: 0;
+
+
+}
+
+.course .overlay h2{
+
+color: white;
+position: absolute;
+bottom: 0;
+left: 50%;
+transform: translate(-50%);
+transition: 2s;
+}
+
+
+
+
+
+.overlay:hover{
+
+  background-color: rgba(230,0,0,0.6);
+ 
+
+}
+
+.overlay:hover h2{
+
+  bottom: 49%
+
+
+}
+
+.course img{
+
+  width: 100%;
+ 
+}
+
+
+
+/* about page */
+
+
+.hero-1{
+
+  background-image:linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(/image/pexels-leticia-alvares-1805702-25542632.jpg);
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+/* services page */
+
+.hero-2{
+
+  background-image:linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(./image/pexels-ryszard-zaleski-29105926-15497752.jpg);
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-3{
+
+  background-image:linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(./image/pexels-ryszard-zaleski-29105926-15497752.jpg);
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+
+/* media query */
+
+nav i{
+
+  color: #fff;
+  font-size: 24px;
+  opacity: 0;
+}
+
+
+.newstyle{
+
+  background-color: blue;
+  padding: 20px;
+}
+
+@media(max-width:600px){
+  .flex-container{
+
+    flex-direction: column;
+  }
+
+
+  .header-content h1{
+
+    font-size: 30px;
+    
+  }
+
+  .nav-links{
+
+    background-color: #f44336;
+
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    text-align: center;
+    z-index: 1;
+    padding-top: 20px;
+    transition: 2s;
+
+    
+   
+
+
+
+
+
+
+
+  }
+
+  
+
+nav .nav-links ul li{
+
+  list-style: none;
+  display: block;
+  padding: 20px;
+
+
+
+ 
+
+
+}
+
+
+nav i{
+
+  color: #fff;
+  font-size: 24px;
+  opacity: 1;
+}
+ 
+}
+  .footer{
+
+    background-color: black;
+    padding-left: 50px;
+    
+  } 
+
+
+
+ 
+
+  /* .flex-container{
+
+  display: flex;
+ 
+  
+  justify-content: space-between;
+  margin: 20px;
+  padding: 20px;
+  
+
+
+
+
+} */
+
+.grid{
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+
+.footer .grid .page ul li{
+
+  text-decoration: none;
+  color: aliceblue;
+  list-style-type: none;
+  padding: 10px;
+
+
+}
+
+.page{
+
+  flex-basis:25%;
+  padding: 15px;
+  
+  /* border: 1px solid white; */
+  
+}
+
+
+ 

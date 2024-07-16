@@ -1,0 +1,87 @@
+
+
+body{
+
+    background-image: url(/image/pexels-majesticaljasmin-9320042.jpg);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.accordion{
+
+    width: 65%;
+    background-color:#fff;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+
+.accordion .accordion-title{
+
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ececec;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+.accordion .content-container .question{
+
+    padding: 18px 0px;
+    font-size: 22px;
+    border-bottom: 1px solid #000;
+    position: relative;
+}
+
+
+.accordion .content-container .question::after{
+
+    content: '+';
+    position: absolute;
+    right: -5px;
+}
+
+
+.accordion .content-container .answer{
+
+    padding-top: 15px;
+    font-size: 22px;
+    line-height: 1.5;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+
+/* Javascript Styling Link */
+
+.accordion .content-container.active .answer{
+
+    /* toggle the class of answer, so that when we click on any of the question, then the height of the class container will be height of 150px instead of 0px, and then show us that content  */
+
+
+    height: 150px;
+
+}
+
+
+.accordion .content-container.active .question{
+
+    font-size: 18px;
+    transition: .5s;
+}
+
+
+.accordion .content-container.active .question::after{
+
+    content: '-';
+    font-size: 30px;
+    transition: .5s;
+}
